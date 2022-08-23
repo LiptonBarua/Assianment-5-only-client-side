@@ -5,10 +5,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Your Select ICC World Top Player</title>
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
   <style>
+    body{
+      font-family: 'Ibarra Real Nova', serif;
+    }
     .card {
       background-color: black;
       color: white;
@@ -16,7 +23,7 @@
 
     input {
       background-color: black;
-      color: white;
+      color: orange;
       border: 2px solid white;
       width: 141px;
       margin: 10px 16px;
@@ -32,7 +39,7 @@
           <img src="image/Tamim_iqbal-removebg-preview.png" alt="">
         </div>
         <div class="pe-lg-5">
-          <h1 class="text-info pb-4">Your Select ICC World Top Player</h1>
+          <h1 class="text-info pb-4 heading">Your Select ICC World Top Player</h1>
           <p style="text-align: justify;">The ICC Awards are an annual set of sports awards for international cricket,
             which recognise and honour the best international cricket players of the previous 12 months. The awards were
             introduced by the International Cricket Council (ICC) in 2004.</p>
@@ -76,7 +83,7 @@
             </div>
           </div>
           <div class="col-md-3 pt-4" style="background-color: black;">
-            <h4 class="text-white">Selected Player</h4>
+            <h4 style="color: orange;">Selected Player</h4>
 
             <table class="table" style="border: black;">
               <tbody id="table-container" class="text-white">
@@ -117,14 +124,14 @@
             </div>
           </div>
           <div class="col-md-3 pb-5" style="background-color: black;">
-            <h3 class="text-white py-3 text-center">Budget</h3>
+            <h3 style="color: orange;" class=" py-3 text-center">Budget</h3>
             <div>
                 <label for="" class="text-white">
                   Per Player
                   <input id="calculate-Field" type="number" style="width: 130px">
                 </label>
               <div class="d-flex justify-content-center">
-                <button class="bg-primary px-5 mt-3" id="btn-calculation">Calculate</button>
+                <button class="bg-primary text-white px-5 mt-3" id="btn-calculation">Calculate</button>
               </div>
               <h5 class="text-center text-white mt-3">Player Expenses $<span style="color: #f19e02;" id="Player-Expenses">00</span></h5>
             </div>
@@ -136,7 +143,7 @@
               <input style="margin-left: 35px;" type="number" name="" id="Coach-input">
             </label>
             <div class="d-flex justify-content-center">
-              <button class="bg-primary px-4" id="calcculate-total">Calculate Total</button>
+              <button class="bg-primary text-white px-4" id="calcculate-total">Calculate Total</button>
             </div>
             <h5 class="text-center text-white mt-3">Total $<span style="color: #f19e02;" id="total">00</span></h5>
           </div>
