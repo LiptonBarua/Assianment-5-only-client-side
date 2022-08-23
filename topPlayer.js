@@ -67,7 +67,20 @@ document.getElementById("btn-calculation").addEventListener('click', function(){
   setElementById('Player-Expenses', name123)
 })
 
-g
+
+document.getElementById('calcculate-total').addEventListener('click', function(){
+  const playerExpenses = elementId('Player-Expenses')
+  const managerInput = calculationInputField('Manager-input');
+  const coechInput = calculationInputField('Coach-input')
+  if(Number.isNaN(managerInput) || managerInput < 0 || Number.isNaN(coechInput) || coechInput < 0){
+    alert('Here the Number should be given in the Input Field');
+    return;
+}
+  const totalValue =playerExpenses+ managerInput+coechInput
+  setElementById('total', totalValue)
+})
+
+
 
 
 
